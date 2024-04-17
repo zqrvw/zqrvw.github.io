@@ -17,13 +17,29 @@ main {
     border: 3px solid #000000;
     padding: 10px 0px 0px 0px;
     z-index: 0;
+    margin: 150px 0px 0px 0px;
 }
 
 header {
+    position: absolute;
+    margin: 20px 0px 0px 0px;
     width: auto;
     height: auto;
     text-align: center;
     background-color: #ffffff;
+    animation: floatingHeader 4s infinite;
+}
+
+@keyframes floatingHeader {
+    0% {
+        margin-top:20px;
+    }
+    50% {
+        margin-top:30px;
+    }
+    100% {
+        margin-top:20px;
+    }
 }
 
 nav {
@@ -46,8 +62,8 @@ nav button {
 }
 
 .thumbnail {
-    width: 240px;
-    height: 135px;
+    width: 360px;
+    height: 202.5px;
     background-size: contain;
     background-color: transparent;
 }
@@ -88,5 +104,9 @@ nav button {
     width: auto;
     height: auto;
     background-color:rgba(255, 173, 228, 0.8);
-    display:block;
+    visibility:hidden;
+}
+
+footer {
+    text-align: center;
 }
