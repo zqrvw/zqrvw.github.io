@@ -7,30 +7,49 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffc0cb;
+    background-color: #fefefe;
+    background-image: url("dodgerbluegrid.png");
+    background-repeat: repeat;
+    background-size: contain;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% { background-position: 0 0; }
+    50% { background-position: 800px 800px; }
+    100% { background-position: 0 0; }
 }
 
 main {
     height: auto;
     width: 800px;
     background-color: #ffffff;
-    border: 3px solid #000000;
+    border: 3px solid #00B4FF;
+    border-radius: 20px;
     padding: 10px 0px 0px 0px;
-    z-index: 0;
-    margin: 150px 0px 0px 0px;
+    z-index: 1;
+    margin: 10px 0px 0px 0px;
 }
 
 header {
     position: absolute;
-    margin: 20px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     width: auto;
     height: auto;
     text-align: center;
-    background-color: #ffffff;
-    animation: floatingHeader 4s infinite;
+    background-color: transparent;
 }
 
-@keyframes floatingHeader {
+.titleResize {
+    max-height: 160px;
+    margin: 0px;
+    z-index: 3;
+    animation: floating2 4s infinite;
+    align-items: center;
+    user-select:none;
+}
+
+@keyframes floating1{
     0% {
         margin-top:20px;
     }
@@ -42,15 +61,28 @@ header {
     }
 }
 
-nav {
-    background-color: #ffffff;
-    margin: 5px;
+@keyframes floating2{
+    0% {
+        margin-top:20px;
+    }
+    60% {
+        margin-top:30px;
+    }
+    100% {
+        margin-top:20px;
+    }
+}
 
+nav {
+    flex-direction: row;
+    margin-top: 150px;
+    background-color: transparent;
+    z-index: 2;
 }
 
 nav button {
-    font-family: 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
-    font-size: 16px;
+    height: auto;
+    cursor: pointer;
 } 
 
 /* ARTICLES */
@@ -60,6 +92,10 @@ nav button {
     height: auto;
     width: auto;
 }
+.page:hover {
+    background-color: aliceblue;
+    border-radius: 20px;
+}
 
 .thumbnail {
     width: 360px;
@@ -68,12 +104,12 @@ nav button {
     background-color: transparent;
 }
 .thumbnail:hover {
-    border-left: 5px solid #7F00FF; 
+    border-left: 5px solid #B9DCFF;
 }
 
 .linkedHeading {
     text-decoration: none;
-    color:#000000;
+    color: #00B4FF;
 }
 
 .articleTitle {
@@ -84,7 +120,7 @@ nav button {
 .articleTitle:hover {
     text-decoration: none;
     color:#ffffff;
-    background-color: #000000;
+    background-color: #00B4FF;
     width:fit-content;
     border-radius: 50px;
 }
@@ -98,15 +134,73 @@ nav button {
 /* ARTICLES END */
 
 .buttonBubble {
-    z-index: 1;
+    z-index: 8;
     position: absolute;
-    transform: translate(0px, 0px);
-    width: auto;
+    margin-top: 225px;
+    width: 770px;
     height: auto;
-    background-color:rgba(255, 173, 228, 0.8);
+    background-color: rgba(255, 248, 201, 0.9);
     visibility:hidden;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: 3px solid #FFCC70;
+    font-family: "Anonymous Pro",'Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+    font-size: 16px;
+}
+
+.buttonBubble h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    background-color: #FFCC70;
+    width: max-content;
+    margin-bottom: 15px
+}
+
+.buttonBubble h1::after {
+    animation: blinkingH1 1s infinite;
+    content: " ";
+}
+
+.buttonBubble p {
+    background-color: #ffffff;
+    width: initial;
+    padding: 25px;
+    color:#00B4FF ;
+}
+
+@keyframes blinkingH1 {
+    0% {
+        content: " ";
+    }
+    50% {
+        content: "_ ";
+    }
+    100% {
+        content: " ";
+    }
+}
+
+.aaaa {
+    background-color: transparent;
+    border: 0px none transparent;
+}
+
+.buttonResize {
+    max-height: 70px;
 }
 
 footer {
     text-align: center;
+    color: #00B4FF;
+}
+
+.cloudBackground{
+    display: flex;
+    position: absolute;
+    transform: translate(15px, -15px);
+    z-index: 0;
+    max-height: 180px;
+    animation: floating1 4s infinite;
+    user-select: none;
 }

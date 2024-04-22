@@ -8,43 +8,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="technicals and arts/beepboop.js"></script>
+    <link rel="icon" type="image/x-icon" href="technicals and arts/spiral.ico">
 </head>
 <body>
     <header>
-        <h1>Welcome to my IT Showcase!</h1>
-        <nav>
-            <button class="aaaa" id="aboutboxbutton">About</button>
-            <button class="aaaa" id="toolsboxbutton">Tools</button>
-            <button class="aaaa" id="limitationsboxbutton">Limitations</button>
-            <button class="aaaa" id="coolboxbutton">Cool Things to Know</button>
-        </nav>
+        <img src="technicals and arts/cloud.png" class="cloudBackground">
+        <img src="technicals and arts/title.png" class="titleResize">
     </header>
+    <nav>
+        <button class="aaaa" id="aboutboxbutton">
+            <img src="technicals and arts/aboutButton.png" class="buttonResize" id="changeAbout">
+        </button>
+        <button class="aaaa" id="toolsboxbutton">
+            <img src="technicals and arts/toolsButton.png" class="buttonResize" id ="changeTools">
+        </button>
+        <button class="aaaa" id="limitationsboxbutton">
+            <img src="technicals and arts/limitationsButton.png" class="buttonResize" id="changeLimitations">
+        </button>
+        <button class="aaaa" id="coolboxbutton">
+            <img src="technicals and arts/coolthingsButton.png" class="buttonResize" id="changeCool">
+        </button>
+    </nav>
 
     <article class="buttonBubble" id="aboutbox">
-        <p>lmao</p>
+        <h1>&zwnj; About</h1>
+        <p>Hello! :D</p>
     </article>
     <article class="buttonBubble" id="toolsbox">
+        <h1>&zwnj; Tools</h1>
         <p>tools</p>
     </article>
     <article class="buttonBubble" id="limitationsbox">
+        <h1>&zwnj; Limitations</h1>
         <p>limitations</p>
     </article>
     <article class="buttonBubble" id="coolbox">
+        <h1>&zwnj; Cool Things to Know!</h1>
         <p>cool shit</p>
     </article>
 
     <main>
         <article class="page">
             <picture>
-                <a href="#" class="linked">
+                <a href="thehowto.html" class="linked">
                     <img src="technicals and arts/placeholder.png"  class="thumbnail" alt="Thumbnail">
                 </a>
             </picture>
             <hgroup>
-                <a href="#" class="linkedHeading">
-                    <h1 class="articleTitle">An Escape the Room Game</h1>
+                <a href="thehowto.html" class="linkedHeading">
+                    <h1 class="articleTitle">The How-to</h1>
                 </a>
                 <p class="description">Lorem ipsum</p> </p>
             </hgroup>
@@ -58,7 +74,21 @@
             </picture>
             <hgroup>
                 <a href="#" class="linkedHeading">
-                    <h1 class="articleTitle">A Productivity App</h1>
+                    <h1 class="articleTitle">Examples</h1>
+                </a>
+                <p class="description">Lorem ipsum</p> </p>
+            </hgroup>
+        </article>
+
+        <article class="page">
+            <picture>
+                <a href="bluecheckers.html" class="linked">
+                    <img src="technicals and arts/placeholder.png"  class="thumbnail" alt="Thumbnail">
+                </a>
+            </picture>
+            <hgroup>
+                <a class="linkedHeading" href="extras.html">
+                    <h1 class="articleTitle" >Extra things! :D</h1>
                 </a>
                 <p class="description">Lorem ipsum</p> </p>
             </hgroup>
@@ -66,8 +96,7 @@
     </main>
 
     <footer>
-        <p>created by me for this event! :D</p>
-        <p>hosted on github pages</p>
+        <p>created by me for this event! :DD</p>
     </footer>
 
 </body>

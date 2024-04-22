@@ -1,0 +1,126 @@
+* {
+    position: relative;
+    font-family: 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    background-image: url("bluecheckers.png");
+    background-repeat: repeat;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 1000px;
+    background-color: #ffffff;
+    border: 0px none #000000;
+    padding: 10px 0px 0px 0px;
+    z-index: 0;
+}
+
+header {
+    margin: 200px 0px 0px 0px;
+    width: inherit;
+    height: auto;
+    text-align: center;
+    border-bottom: 3px dashed #B9DCFF;
+}
+
+nav button {
+    font-family: 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+    font-size: 16px;
+} 
+
+.aaaa {
+    display: flex;
+    transform: translate(0px, 0px);
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* ARTICLES */
+.page {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+.page:hover {
+    background-color: aliceblue;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.linkedHeading {
+    text-decoration: none;
+    color:#000000;
+}
+
+.articleTitle {
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 10px 5px;
+}
+
+.articleTitle:hover {
+    text-decoration: none;
+    color:#ffffff;
+    background-color: #000000;
+    width:fit-content;
+    border-radius: 50px;
+}
+
+.description {
+    width: auto;
+    height: auto;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+}
+/* ARTICLES END */
+
+.buttonBubble {
+    z-index: 1;
+    position: absolute;
+    transform: translate(0px, 0px);
+    width: auto;
+    height: auto;
+    background-color:rgba(255, 173, 228, 0.8);
+    visibility:hidden;
+}
+
+footer {
+    text-align: center;
+}
+
+.goodies {
+    display: flex;
+    flex-direction: row;
+}
+
+.confettishower {
+    position: absolute;
+    background-color: transparent;
+    background-image: url("transparentconfetti.gif");
+    background-repeat: repeat;
+    background-size: 200px;
+    height: 250px;
+    width: inherit;
+    z-index: 18;
+}
