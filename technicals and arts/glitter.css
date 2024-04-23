@@ -26,7 +26,7 @@ main {
     background-color: #ffffff;
     border: 3px solid #00B4FF;
     border-radius: 20px;
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     z-index: 1;
     margin: 10px 0px 0px 0px;
 }
@@ -88,12 +88,12 @@ nav button {
 /* ARTICLES */
 .page {
     display: flex;
-    padding: 15px 15px 15px 15px;
-    height: auto;
-    width: auto;
+    padding: 15px;
+    height: initial;
+    width: initial;
 }
 .page:hover {
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     border-radius: 20px;
 }
 
@@ -102,6 +102,7 @@ nav button {
     height: 202.5px;
     background-size: contain;
     background-color: transparent;
+    border: 1px dashed #00B4FF;
 }
 .thumbnail:hover {
     border-left: 5px solid #B9DCFF;
@@ -165,7 +166,8 @@ nav button {
 .buttonBubble p {
     background-color: #ffffff;
     width: initial;
-    padding: 25px;
+    padding: 15px 25px 15px 25px;
+    margin: 0px auto 0px auto;
     color:#00B4FF ;
 }
 

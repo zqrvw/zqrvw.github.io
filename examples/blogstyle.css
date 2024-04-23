@@ -1,0 +1,176 @@
+* {
+    position: relative;
+    font-family: 'Anonymous Pro','Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("abstractseamless.png");
+    background-repeat: repeat;
+}
+
+header {
+    padding: 15px 35px 15px 35px;
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: auto;
+    background-color:#ffffff;
+    border-bottom: 3px dashed #D1BB9E;
+}
+
+main {
+    display: flex;
+    padding: 15px 35px 15px 35px;
+    justify-content: center;
+    position: relative;
+    background-color: #FFF2E1;
+    width:1200px;
+    height: 100vh;
+}
+
+.HomePage {
+    padding: 15px 35px 15px 35px;
+    position: absolute;
+    background-color:#ffffff;
+    z-index: 2;
+    width: 1000px;
+    height: auto;
+}
+
+.AboutPage {
+    padding: 15px 35px 15px 35px;
+    position: absolute;
+    background-color:#ffffff;
+    z-index: 1;
+    width: 1000px;
+    height: 100cqb;
+}
+
+.ArticleListsPage {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 35px 15px 35px;
+    position: absolute;
+    background-color:#ffffff;
+    z-index: 0;
+    width: 1000px;
+    height: auto;
+}
+
+#BlogLogo h1 {
+    font-family:'Jersey 10',monospace;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 46px;
+    border-right: 5px solid #D1BB9E;
+    color: #D1BB9E;
+
+}
+
+#BlogLogo h1::after {
+    content: "  ";
+}
+
+nav button {
+    font-family: 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+    background-color: #ffffff;
+    border: 0px none transparent;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px 25px 10px 25px
+}
+
+nav button:hover {
+    background-color: #EAD8C0;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 36px;
+    color: #D1BB9E;
+}
+
+h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #638889;
+    text-align: center;
+}
+
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.page {
+    display: flex;
+    padding: 15px 15px 15px 15px;
+    height: auto;
+    width: auto;
+}
+
+.page:hover {
+    background-color: rgba(99, 136, 137, 0.1);
+}
+
+.page:hover h1 {
+    color: #ffffff;
+    background-color: #D1BB9E;
+    border-radius: 25px 0px 25px 0px;
+}
+
+.thumbnail {
+    height: 250px;
+    width: 360px;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.linkedHeading {
+    text-decoration: none;
+    color:#000000;
+}
+
+.articleTitle {
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 10px 5px;
+}
+
+.description {
+    width: auto;
+    height: auto;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.endSquiggle {
+    height: auto;
+    width: auto;
+    text-align: center;
+    color: #D1BB9E;
+    font-size: 56px;
+}
+
+.date {
+    font-style: italic;
+    color: #638889;
+    padding-inline-start: 10px;
+}
+
+
+.mockLink {
+    color: #D1BB9E;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 10px 15px 10px;
+}
+
+.mockLink:hover {
+    color: #ffffff;
+    background-color: #D1BB9E;
+}

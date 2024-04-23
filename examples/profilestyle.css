@@ -2,3 +2,185 @@
     position: relative;
     font-family: 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("seamlessstars.jpg");
+    background-repeat: repeat;
+}
+
+#sidebar {
+    transform: translate(-430px, 80px);
+    position: relative;
+    margin-top: 130px;
+    background-color: rgba(114, 134, 211, 0.7);
+    border: 5px solid #FFD966;
+    box-shadow: 0px 0px 52px #FFD966;
+    animation: glowing 3s infinite;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    z-index: 3;
+}
+
+#mainProfileBox {
+    border: 3px solid #F9F3CC;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 120px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px #537188;
+}
+
+.idDesc h1 {
+    width: 120px;
+    height: 20px;
+    padding-left: 8px;
+}
+.idDesc h2 {
+    width: 120px;
+    height: 20px;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#MenuBox {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: transparent
+}
+
+#MenuBox button {
+    padding: 10px;
+    font-size: 16px;
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+#MenuBox button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #00B4FF;
+
+}
+
+#MenuBox button:hover::after {
+    content: " <<<";
+}
+
+#MenuBox button:hover::before {
+    content: ">>> ";
+}
+
+
+#MainBox {
+    transform: translate(210px, 120px);
+    position: absolute;
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 650px;
+    background-color: rgba(114, 134, 211, 0.7);
+    border: 5px solid #FFD966;
+    box-shadow: 0px 0px 52px #FFD966;
+    border-radius: 25px;
+    z-index: 2;
+    animation: glowing 3s infinite;
+}
+
+#MediaBox {
+    transform: translate(210px, 120px);
+    position: absolute;
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 650px;
+    background-color: rgba(114, 134, 211, 0.7);
+    border: 5px solid #FFD966;
+    box-shadow: 0px 0px 52px #FFD966;
+    border-radius: 25px;
+    animation: glowing 3s infinite;
+    z-index: 1;
+    visibility: hidden;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0px 0px 52px #FFF2CC;
+    }
+    50% {
+        box-shadow: 0px 0px 32px #FFF2CC;        
+    }
+    100% {
+        box-shadow: 0px 0px 52px #FFF2CC;
+    }
+
+}
+
+.profileBoxes {
+    columns: 2;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 15px;
+}
+
+.typologyBox {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 15px;
+}
+
+.likesBox {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 15px;
+}
+
+.dislikesBox {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 15px;
+}
+
+.hobbiesBox {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 15px;
+    padding: 15px;
+}
+
+.pfpResize {
+    max-width: 120px;
+    border: 2px solid #F9F3CC;
+}
+
+.idDesc {
+    width:auto;
+    height: auto;
+}

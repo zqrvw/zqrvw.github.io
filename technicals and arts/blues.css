@@ -1,6 +1,6 @@
 * {
     position: relative;
-    font-family: 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+    font-family: 'Anonymous Pro','Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
 }
 
 body {
@@ -16,7 +16,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100%;
+    height: auto;
     width: 1000px;
     background-color: #ffffff;
     border: 0px none #000000;
@@ -24,7 +24,7 @@ main {
     z-index: 0;
 }
 
-header {
+.goodiesHeader {
     margin: 200px 0px 0px 0px;
     width: inherit;
     height: auto;
@@ -40,26 +40,41 @@ nav button {
 .aaaa {
     display: flex;
     transform: translate(0px, 0px);
-    background-color: #ffffff;
+    color: #00B4FF;
     width: auto;
     height: auto;
     padding: 20px;
     margin: 20px;
+    border-radius: 25px;
+    border: 4px double #00B4FF;
+    background-color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.aaaa:hover {
+
+    color: #ffffff;
+    border: 4px double #00B4FF;
+    background-color: #00B4FF;
 }
 
 /* ARTICLES */
 .page {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 15px 15px 15px 15px;
     flex-direction: column;
     margin: auto;
     text-align: center;
-    height: 300px;
+    height: 520px;
     width: 300px;
+    font-size: larger;
 }
 .page:hover {
-    background-color: aliceblue;
+    background-color: #f0f8ff;
 }
 
 .thumbnail {
@@ -69,14 +84,16 @@ nav button {
     background-color: transparent;
 }
 
+
 .linkedHeading {
     text-decoration: none;
     color:#000000;
 }
 
 .articleTitle {
-    padding: 0px 5px 0px 5px;
-    margin: 0px 5px 10px 5px;
+    padding: 8px 5px 8px 5px;
+    margin: auto;
+    margin-bottom: 5%;
 }
 
 .articleTitle:hover {
@@ -95,23 +112,15 @@ nav button {
 }
 /* ARTICLES END */
 
-.buttonBubble {
-    z-index: 1;
-    position: absolute;
-    transform: translate(0px, 0px);
-    width: auto;
-    height: auto;
-    background-color:rgba(255, 173, 228, 0.8);
-    visibility:hidden;
-}
-
 footer {
     text-align: center;
 }
 
 .goodies {
+/*     transform: translate(-1000px,450px); */
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .confettishower {
@@ -123,4 +132,33 @@ footer {
     height: 250px;
     width: inherit;
     z-index: 18;
+}
+
+.goodies p {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.informationBlurb {
+    margin: 20px auto 20px auto;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    background-color: #fff8c9;
+    border: 4px double #FFCC70;
+    font-size: larger;
+}
+
+.informationBlurb h2 {
+    background-color: #ffffff;
+    width: 600px;
+    border-radius: 25px;
+    height: fit-content;
+    padding: 10px 0px 10px 0px;
+    margin: 15px auto 15px auto;
+}
+
+.informationBlurb a {
+    color: green;
 }
