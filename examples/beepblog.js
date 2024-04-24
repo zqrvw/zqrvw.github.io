@@ -18,4 +18,17 @@ $(document).ready(function(){
       $(".AboutPage").css("z-index", "0");
     });
 
+    $("#mainButton").on("click", function(){
+      $("#MainBox").css("z-index", "2");
+      $("#MainBox").css("visibility", "visible");
+      $("#MediaBox").css("z-index", "1");
+      $("#MediaBox").css("visibility", "hidden");
+    });
+  $("#mediaButton").on("click", function(){
+      $("#MediaBox").css("z-index", "2");
+      $("#MediaBox").css("visibility", "visible");
+      $("#MainBox").css("z-index", "1");
+      $("#MainBox").css("visibility", "hidden");
+    });     
+
 }); 

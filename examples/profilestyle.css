@@ -1,6 +1,7 @@
 * {
     position: relative;
     font-family: 'Courier Prime','Courier','Lucida Sans Typewriter','Lucida Typewriter',monospace;
+    color: #374259;
 }
 
 body {
@@ -39,13 +40,15 @@ body {
     margin: 15px;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 0px 0px 8px #537188;
+    box-shadow:0px 0px 8px #374259
 }
 
 .idDesc h1 {
     width: 120px;
     height: 20px;
     padding-left: 8px;
+    font-size: 24px;
+    color: #7286d3;
 }
 .idDesc h2 {
     width: 120px;
@@ -53,6 +56,8 @@ body {
     padding-left: 8px;
     font-size: 14px;
     font-weight: lighter;
+    color: #7286d3;
+    margin: 0px;
 }
 
 #MenuBox {
@@ -144,35 +149,75 @@ body {
 }
 
 .typologyBox {
+    transform: translate(35px, 25px) rotate(-19deg);
     width: 200px;
     height: 200px;
-    background-color: aquamarine;
+    background-color: #FFEFEF;
     margin: 15px;
     padding: 15px;
+    box-shadow:0px 0px 8px #374259;
 }
 
 .likesBox {
+    transform: translate(-35px, 50px) rotate(23deg);
     width: 200px;
     height: 200px;
-    background-color: aquamarine;
+    background-color: #FFCF96;
     margin: 15px;
     padding: 15px;
+    box-shadow:0px 0px 8px #374259
 }
 
 .dislikesBox {
     width: 200px;
     height: 200px;
-    background-color: aquamarine;
+    background-color: #804674;
+    color: #ffffff;
     margin: 15px;
     padding: 15px;
+    box-shadow:0px 0px 8px #374259
+}
+
+.dislikesBox li, .dislikesBox h1, .favMediaBox li, .favMediaBox h1,.favSongsBox p, .favSongsBox h1 {
+    color: #ffffff;
 }
 
 .hobbiesBox {
     width: 200px;
     height: 200px;
-    background-color: aquamarine;
+    background-color: #C3E2C2;
     margin: 15px;
     padding: 15px;
+    box-shadow:0px 0px 8px #374259
+}
+
+.favMediaBox {
+    width: 200px;
+    height: 200px;
+    background-color: #D5B4B4;
+    margin: 15px;
+    padding: 15px;
+    box-shadow:0px 0px 8px #374259
+}
+
+
+.favSongsBox {
+    width: 200px;
+    height: 200px;
+    background-color: #B3C8CF;
+    margin: 15px;
+    padding: 15px;
+    box-shadow:0px 0px 8px #374259
+}
+
+.qouteBox {
+    transform: translate(120px, -120px) rotate(-24deg);
+    width: 500px;
+    height: 200px;
+    background-color: #F5E8DD;
+    margin: 15px;
+    padding: 15px;
+    box-shadow:0px 0px 8px #374259
 }
 
 .pfpResize {

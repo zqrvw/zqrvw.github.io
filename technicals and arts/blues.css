@@ -69,7 +69,7 @@ nav button {
     flex-direction: column;
     margin: auto;
     text-align: center;
-    height: 520px;
+    height: 400px;
     width: 300px;
     font-size: larger;
 }
@@ -161,4 +161,22 @@ footer {
 
 .informationBlurb a {
     color: green;
+}
+
+.howToH1 {
+    color: #00B4FF;
+    margin: auto;
+    padding: 50px 0px 0px 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 46px;
+}
+
+ol, ul {
+    font-size: 16px;
+    padding: 0px 120px 0px 120px;
+}
+
+code {
+    background-color: #B9DCFF;
+
 }
