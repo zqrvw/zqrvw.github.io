@@ -180,3 +180,7 @@ code {
     background-color: #B9DCFF;
 
 }
+
+.informationBlurb p {
+    margin: 24px;
+}
