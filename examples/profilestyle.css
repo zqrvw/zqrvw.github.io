@@ -141,41 +141,45 @@ body {
 
 .profileBoxes {
     columns: 2;
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     background-color: aquamarine;
     margin: 15px;
     padding: 15px;
+    font-size: 12px;
 }
 
 .typologyBox {
     transform: translate(35px, 25px) rotate(-19deg);
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     background-color: #FFEFEF;
     margin: 15px;
     padding: 15px;
     box-shadow:0px 0px 8px #374259;
+    font-size: 12px;
 }
 
 .likesBox {
     transform: translate(-35px, 50px) rotate(23deg);
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     background-color: #FFCF96;
     margin: 15px;
     padding: 15px;
-    box-shadow:0px 0px 8px #374259
+    box-shadow:0px 0px 8px #374259;
+    font-size: 12px;
 }
 
 .dislikesBox {
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     background-color: #804674;
     color: #ffffff;
     margin: 15px;
     padding: 15px;
-    box-shadow:0px 0px 8px #374259
+    box-shadow:0px 0px 8px #374259;
+    font-size: 12px;
 }
 
 .dislikesBox li, .dislikesBox h1, .favMediaBox li, .favMediaBox h1,.favSongsBox p, .favSongsBox h1 {
@@ -183,41 +187,45 @@ body {
 }
 
 .hobbiesBox {
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     background-color: #C3E2C2;
     margin: 15px;
     padding: 15px;
-    box-shadow:0px 0px 8px #374259
+    box-shadow:0px 0px 8px #374259;
+    font-size: 12px;
 }
 
 .favMediaBox {
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     background-color: #D5B4B4;
     margin: 15px;
     padding: 15px;
-    box-shadow:0px 0px 8px #374259
+    box-shadow:0px 0px 8px #374259;
+    font-size: 12px;
 }
 
 
 .favSongsBox {
-    width: 200px;
-    height: 200px;
+    width: fit-content;
+    height: fit-content;
     background-color: #B3C8CF;
     margin: 15px;
     padding: 15px;
-    box-shadow:0px 0px 8px #374259
+    box-shadow:0px 0px 8px #374259;
+    font-size: 12px;
 }
 
 .qouteBox {
-    transform: translate(120px, -120px) rotate(-24deg);
-    width: 500px;
-    height: 200px;
+    transform: translate(10px, -120px) rotate(-12deg);
+    width: fit-content;
+    height: fit-content;
     background-color: #F5E8DD;
     margin: 15px;
     padding: 15px;
-    box-shadow:0px 0px 8px #374259
+    box-shadow:0px 0px 8px #374259;
+    font-size: 12px;
 }
 
 .pfpResize {
