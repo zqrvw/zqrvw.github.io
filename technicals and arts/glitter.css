@@ -206,3 +206,16 @@ footer {
     animation: floating1 4s infinite;
     user-select: none;
 }
+
+#quickThing {
+    text-align: center;
+    color: #00B4FF;
+    margin: 24px;
+}
+
+.quickHighlight {
+    background-color: #00B4FF;
+    color: #ffffff;
+    padding: 22px;
+    margin: 0px 46px 24px 46px;
+}
