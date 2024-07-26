@@ -207,7 +207,7 @@ footer {
     user-select: none;
 }
 
-#quickThing {
+.quickThing {
     text-align: center;
     color: #00B4FF;
     margin: 24px;
